@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Hunde family</string>
+    <string name="hello_world">Hello, World!</string>
+    <string name="_09_45_am">09:45 AM</string>
+    <string name="_09_45_am_1">09:45 AM</string>
+    <string name="_09_45_am_2">09:45 AM</string>
+    <string name="user_name">User Name</string>
+    <string name="_254">+254...</string>
+</resources>

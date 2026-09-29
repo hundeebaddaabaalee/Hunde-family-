@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#673AB7"
+    android:gravity="center"
+    android:padding="24dp">
+
+    <!-- 1. App Logo -->
+    <ImageView
+        android:id="@+id/ivAppLogo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:src="@mipmap/ic_launcher_round"
+        android:contentDescription="App Logo" />
+
+    <!-- 2. Maqaa Appii -->
+    <TextView
+        android:id="@+id/tvAppName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivAppLogo"
+        android:layout_centerHorizontal="true"
+        android:text="Hunde Family"
+        android:textColor="#FFFFFF"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <!-- 3. Ergaa Simannaa -->
+    <TextView
+        android:id="@+id/tvWelcomeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvAppName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="Baga Nagaan Dhuftan"
+        android:textColor="#E0E0E0"
+        android:textSize="16sp" />
+
+    <!-- 4. Loading Indicator (Maraamaa) -->
+    <ProgressBar
+        android:id="@+id/pbSplashLoading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvWelcomeText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:indeterminateTint="#FFFFFF" />
+
+    <!-- 5. Version Appii (Gadaa irraan) -->
+    <TextView
+        android:id="@+id/tvAppVersion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="v1.0.0"
+        android:textColor="#B3FFFFFF"
+        android:textSize="12sp" />
+
+</RelativeLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hunde.family">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    
+    <!-- Permission-wwan fakkii fi faayiloota erguuf/fe'uuf gargaaran -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.HundeFamily">
+
+        <!-- SplashActivity (LAUNCHER tokkicha jalqaba banamu) -->
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity 
+    android:name=".CallActivity"
+    android:screenOrientation="portrait"
+    android:exported="false" />
+
+        <activity 
+            android:name=".MainActivity"
+            android:exported="false" />
+
+        <activity 
+            android:name=".LoginActivity"
+            android:exported="false" />
+
+        <activity 
+            android:name=".RegisterActivity"
+            android:exported="false" />
+
+        <activity 
+            android:name=".HomeActivity"
+            android:exported="false" />
+
+        <!-- SettingsActivity -->
+        <activity 
+            android:name=".SettingsActivity"
+            android:exported="false" />
+
+        <!-- 1. ChatActivity (Fuula Waliin Haasawaa) -->
+        <activity 
+            android:name=".ChatActivity" 
+            android:exported="false" />
+
+        <!-- 2. DataGiftActivity (Paakeejii Dataa) -->
+        <activity 
+            android:name=".DataGiftActivity" 
+            android:exported="false" />
+
+        <!-- 3. WalletActivity (Maallaqa koo & Mallaqa galchuu) -->
+        <activity 
+            android:name=".WalletActivity" 
+            android:exported="false" />
+
+        <!-- 4. TransactionHistoryActivity (Seenaa kaffaltii fi ergaa) -->
+        <activity 
+            android:name=".TransactionHistoryActivity" 
+            android:exported="false" />
+
+        <!-- 5. AccountActivity (Odeeffannoo account, password, profile) -->
+        <activity 
+            android:name=".ProfileActivity" 
+            android:exported="false" />
+
+        <!-- 6. NotificationsActivity (Beeksisa ergaa, sagalee, vibration) -->
+        <activity 
+            android:name=".NotificationsActivity" 
+            android:exported="false" />
+
+        <!-- 7. PrivacySecurityActivity (Iccitii fi nageenya) -->
+        <activity 
+            android:name=".PrivacySettingsActivity" 
+            android:exported="false" />
+
+        <!-- 8. AppearanceActivity (Dark/Light Mode, theme) -->
+        <activity 
+            android:name=".AppearanceActivity" 
+            android:exported="false" />
+
+        <!-- 9. LanguageActivity (Afaan appii) -->
+        <activity 
+            android:name=".LanguageActivity" 
+            android:exported="false" />
+
+        <!-- 10. ChatSettingsActivity (Wallpaper, auto-download, font size) -->
+        <activity 
+            android:name=".ChatSettingsActivity" 
+            android:exported="false" />
+
+        <!-- 11. StorageDataActivity (Clear cache, network usage) -->
+        <activity 
+            android:name=".StorageDataActivity" 
+            android:exported="false" />
+
+        <!-- 12. HelpSupportActivity (Gargaarsa fi deeggersa) -->
+        <activity 
+            android:name=".HelpSupportActivity" 
+            android:exported="false" />
+
+    </application>
+
+</manifest>

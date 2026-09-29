@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "94935550685",
+    "firebase_url": "https://hunde-family-default-rtdb.firebaseio.com",
+    "project_id": "hunde-family",
+    "storage_bucket": "hunde-family.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:94935550685:android:b48165f38b5a7c83572934",
+        "android_client_info": {
+          "package_name": "com.hunde.family"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "94935550685-d2ve2skdna8frv5l2rklt039ve4cer1h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArmktoKwDWowjUM18-GN9f2v5sns5ljh8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "94935550685-d2ve2skdna8frv5l2rklt039ve4cer1h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

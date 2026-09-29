@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212">
+
+    <!-- Remote Video Container (Suuraa/Video namicha waamamaa) -->
+    <FrameLayout
+        android:id="@+id/remote_video_view_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- Local Video Container (Video keenya kan kantiitiin mul'atu) -->
+    <FrameLayout
+        android:id="@+id/local_video_view_container"
+        android:layout_width="120dp"
+        android:layout_height="160dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="16dp"
+        android:background="#333333" />
+
+    <!-- Top Overlay: Maqaa fi Status -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvCallerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Maqaa Namichaa"
+            android:textColor="@android:color/white"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvCallStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Bilbilaa jira..."
+            android:textColor="#B0BEC5"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <!-- Bottom Controls (Buttons: Mic, End Call, Camera, Speaker) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <!-- Mute Mic Button -->
+        <ImageButton
+            android:id="@+id/btnMute"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginEnd="20dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="Mute"
+            android:src="@android:drawable/ic_btn_speak_now" />
+
+        <!-- End Call Button (Diimaa) -->
+        <ImageButton
+            android:id="@+id/btnEndCall"
+            android:layout_width="68dp"
+            android:layout_height="68dp"
+            android:background="@android:color/holo_red_dark"
+            android:contentDescription="End Call"
+            android:src="@android:drawable/ic_menu_close_clear_cancel" />
+
+        <!-- Switch Camera Button -->
+        <ImageButton
+            android:id="@+id/btnSwitchCamera"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="20dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="Switch Camera"
+            android:src="@android:drawable/ic_menu_camera" />
+    </LinearLayout>
+
+</RelativeLayout>

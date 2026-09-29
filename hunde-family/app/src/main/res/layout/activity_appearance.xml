@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bifa Appii (Appearance)"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp" />
+
+    <!-- RadioGroup Filannoowwan Mode -->
+    <RadioGroup
+        android:id="@+id/rgThemeMode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rbSystemDefault"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Akka Bifa Bilbilaa (System Default)"
+            android:padding="12dp"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/rbLightMode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bifa Ifaa (Light Mode)"
+            android:padding="12dp"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/rbDarkMode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bifa Dukkanaawaa (Dark Mode)"
+            android:padding="12dp"
+            android:textSize="16sp" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gara Duubaatti"
+        android:layout_marginTop="32dp" />
+
+</LinearLayout>

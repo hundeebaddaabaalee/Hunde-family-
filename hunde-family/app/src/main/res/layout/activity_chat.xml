@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#E5DDD5">
+
+    <!-- Top Action Bar (Header) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#6200EE"
+        android:padding="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnBackChat"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:text="←"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:background="?android:attr/selectableItemBackgroundBorderless" />
+
+        <TextView
+            android:id="@+id/tvChatUserName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:text="Obbo Caalaa"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- Call Buttons -->
+        <Button
+            android:id="@+id/btnVoiceCall"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:text="📞"
+            android:textSize="16sp"
+            android:background="?android:attr/selectableItemBackgroundBorderless" />
+
+        <Button
+            android:id="@+id/btnVideoCall"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:text="📹"
+            android:textSize="16sp"
+            android:background="?android:attr/selectableItemBackgroundBorderless" />
+
+        <Button
+            android:id="@+id/btnMoreOptions"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:text="⋮"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:background="?android:attr/selectableItemBackgroundBorderless" />
+    </LinearLayout>
+
+    <!-- Chat Messages Area -->
+    <ScrollView
+        android:id="@+id/scrollChat"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="12dp">
+
+        <LinearLayout
+            android:id="@+id/containerMessages"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Incoming Message Bubble -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:padding="10dp"
+                android:text="Akkam jirtu? Nageenyee..."
+                android:textColor="#111111"
+                android:textSize="15sp"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Outgoing Message Bubble -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:background="#DCF8C6"
+                android:padding="10dp"
+                android:text="Nageenya, galatoomaa!"
+                android:textColor="#111111"
+                android:textSize="15sp"
+                android:layout_marginBottom="8dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Bottom Input Bar (Image, Voice, File, Send) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:padding="8dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <!-- Attachment (File / Image / Media) -->
+        <Button
+            android:id="@+id/btnAttach"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:text="📎"
+            android:textSize="18sp"
+            android:background="?android:attr/selectableItemBackgroundBorderless" />
+
+        <!-- Camera / Image Button -->
+        <Button
+            android:id="@+id/btnCamera"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:text="📷"
+            android:textSize="18sp"
+            android:background="?android:attr/selectableItemBackgroundBorderless" />
+
+        <!-- Message Input -->
+        <EditText
+            android:id="@+id/etMessage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Ergaa barreessi..."
+            android:padding="10dp"
+            android:background="#F0F0F0"
+            android:textSize="14sp"
+            android:maxLines="4" />
+
+        <!-- Voice Message Button -->
+        <Button
+            android:id="@+id/btnVoiceRecord"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:text="🎙️"
+            android:textSize="18sp"
+            android:background="?android:attr/selectableItemBackgroundBorderless" />
+
+        <!-- Send Button -->
+        <Button
+            android:id="@+id/btnSend"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:text="➔"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:backgroundTint="#6200EE" />
+
+    </LinearLayout>
+
+</LinearLayout>
